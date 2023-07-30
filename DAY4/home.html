@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br> 
+        <script>
+           function verifyPassword() {  
+            var pw = document.getElementById("pswd").value;  
+            if(pw == "") {  
+                document.getElementById("message").innerHTML = "**Fill the password please!";  
+                   return false;  
+            }  
+   
+            if(pw.length < 8) {  
+                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+                 return false;  
+            }  
+  
+            if(pw.length > 15) {  
+                 document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+                 return false;  
+              } else {  
+                alert("Password is correct");  
+            }  
+        } 
+            </script>
+        <div class="container">
+            <div class="form">
+                    <form onsubmit ="return verifyPassword()">
+                        <br>               
+                        <input type = "username" placeholder="username" id= "username" value = "">   
+                        <input type = "password" placeholder="password" id = "pswd" value = "">   
+                        <span id = "message" style="color:red"> </span> <br><br>  
+                          
+                    </form>
+                    <input id="registerbutton button" type = "submit" onclick="verifyPassword()" class="registerbutton button" value = "Submit" style="background-color: green;">  
+                          
+
+                    <p style="text-align: center; color: grey;">Not registered? <a href="#" style="text-align: center; color: green;">Create an account</a></p>
+                    <p id="demo"></p>
+
+            </div>
+        </div>
+    
+    </body>
+    <footer>
+
+    </footer>
+</html>

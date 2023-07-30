@@ -1,0 +1,114 @@
+body{
+  background-color: green;
+  margin: auto;
+  }
+  .container 
+  {
+    background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:25%;
+  margin-right:25%;
+  border: 1px solid #000000;
+  margin-bottom: 5px;
+  padding: 0px 15px 0 15px;
+  }
+  input[type=username], input[type=password] 
+  {
+  width: 97%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #F5F5F5;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  li.done {
+    background-color: #d9d9d9;
+    text-decoration: line-through;
+  }
+
+  li button {
+    margin-left: 5px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  li button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+
+  li button.done {
+    background-color: #4caf50;
+    color: white;
+  }
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  hr 
+  {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 5px;
+  }
+  .registerbutton
+  {
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+  width: 99%;
+  }
+  .registerbutton.button {
+      
+      transition: all 0.5s;
+      cursor: pointer;
+      box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    }
+    
+  .registerbutton.button{
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+
+    
+  .registerbutton.button:hover{
+      padding-right: 24px;
+      padding-left:8px;
+      background-color:#b39171;
+  
+    }
+    
+  .registerbutton.button:hover:after {
+      opacity: 1;
+      right: 10px;
+      
+  }
+   
+  
+   
